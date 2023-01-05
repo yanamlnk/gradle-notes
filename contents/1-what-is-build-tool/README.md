@@ -2,24 +2,24 @@
 
 ## How do you “build” your code? 
 ``` 
-	
-Source code —————-——————> Bytecode ————————————> JVM
-(Your code in       Compile (tranform         (1s and 0s)	     Run		(Java Virtual Machine
-   .java file)	       into .class file)						takes bytecode and 
-										runs it)
+	         Compile (transform
+	         into .class file)                            Run
+Source code ------------------------------> Bytecode -----------------------> JVM
+(Your code in                             (1s and 0s)	     	     (Java Virtual Machine
+ .java file)	   						       takes bytecode and 
+									   runs it)
 ``` 				
-“Build” -> Compile = translate your human code into machine language (1s and 0s).
 
-## How do you compile?
+## How do you compile and run your code?
 
 1. JDK (Java Development Kit) has a compiler command `javac`. Run in terminal:
 
 ```
-javac Program1.java Program2.java
+javac Program.java
 ```
-Program1.class and Program2.class files will be created. To run them: use `java` command. If you are on the same directory as your source code, then:
+Program.class file will be created. To run it: use `java` command. If you are on the same directory as your source code, then:
 ```
-java -cp . Program1
+java -cp . Program
 ```
 2. IDE of your choosing usually has its own build mechanism.
 
