@@ -47,3 +47,7 @@ Apache Maven and Gradle are more than simply build tools. They manage almost the
 ### Additional reading: 
 - [Difference between Gradle and Maven](https://www.geeksforgeeks.org/difference-between-gradle-and-maven/)
 - [How to migrate to Gradle from Maven](https://docs.gradle.org/current/userguide/migrating_from_maven.html#migrating_from_maven)
+
+#   
+|:arrow_left: [BACK](https://github.com/yanamlnk/gradle-notes)|[TABLE OF CONTENTS](https://github.com/yanamlnk/gradle-notes#table-of-contents)|[NEXT](https://github.com/yanamlnk/gradle-notes/blob/main/contents/2-how-to-install/README.md) :arrow_right:|
+| --- | --- | --- |
