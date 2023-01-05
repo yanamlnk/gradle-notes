@@ -1,0 +1,49 @@
+# 1. What is Build Tool?
+
+## How do you “build” your code? 
+``` 
+	
+Source code —————-——————> Bytecode ————————————> JVM
+(Your code in       Compile (tranform         (1s and 0s)	     Run		(Java Virtual Machine
+   .java file)	       into .class file)						takes bytecode and 
+										runs it)
+``` 				
+“Build” -> Compile = translate your human code into machine language (1s and 0s).
+
+## How do you compile?
+
+1. JDK (Java Development Kit) has a compiler command `javac`. Run in terminal:
+
+```
+javac Program1.java Program2.java
+```
+Program1.class and Program2.class files will be created. To run them: use `java` command. If you are on the same directory as your source code, then:
+```
+java -cp . Program1
+```
+2. IDE of your choosing usually has its own build mechanism.
+
+## Why do you need to use separate build tool?
+
+`javac` is great for small programs with few classes, but when your application uses 3rd party libraries (in jar files) (and you will use them a lot), things got complicated and time-consuming. 
+```
+javac -cp lib1.jar;lib2.jar;lib3.jar MyProgram.java
+```
+Build mechanism in IDE is great, but mostly pretty simple compared to build tools. With it you can’t:
+- set up custom/complex build configurations
+- download and add dependencies
+- run tests
+- package compiled code
+
+## What build tools for Java exist?
+
+Most popular are:
+1. Apache Ant - the oldest
+2. Apache Maven - the most popular
+3. Gradle - the newest
+
+Apache Maven and Gradle are more than simply build tools. They manage almost the entire lifecycle of an application.
+
+### Additional reading: 
+- [Difference between Gradle and Maven](https://www.geeksforgeeks.org/difference-between-gradle-and-maven/)
+- [How to migrate to Gradle from Maven](https://docs.gradle.org/current/userguide/migrating_from_maven.html#migrating_from_maven)
