@@ -3,11 +3,12 @@
 
 ## Executing tasks
 
-`./gradlew taskName` - Linux/Mac
-`./gradlew.bat taskName` - Windows
-`./` - if you are currently in project root directory
+- `./gradlew taskName` - Linux/Mac
+- `./gradlew.bat taskName` - Windows
 
-If no taskName specified, and there are no default tasks in `build.gradle` file, task `help` will be executed.
+<sub>`./` - if you are currently in project root directory. Otherwise, full filepath to the build directory should be provided</sub>
+
+If no `taskName` is specified, and there are no default tasks in `build.gradle` file, task `help` will be executed.
 
 ## Wrapper overview
 
@@ -22,7 +23,8 @@ If no taskName specified, and there are no default tasks in `build.gradle` file,
 
 `gradle`: 
 - initialise a new project as a Gradle project
-- generate the Gradle wrapper
+- generate the Gradle Wrapper files
+
 `gradlew`:
 - build a project
 - test a project
@@ -33,7 +35,7 @@ If no taskName specified, and there are no default tasks in `build.gradle` file,
 1) run command `gradle init` in project directory to create new project using setup menu - Wrapper files will be automatically added to the project directory
 2) OR command `gradle wrapper` in project directory to add Wrapper files manually
 
-- Wrapper should be added to the project only once. There is no need to generate new files when you just want to update Gradle version.
+- Wrapper should be added to the project only once. There is no need to generate new files when you just want to upgrade Gradle version.
 
 ## Upgrade version of Gradle using Wrapper
 
@@ -63,14 +65,14 @@ To upgrade version, run command `./gradlew wrapper --gradle-version=<version>`, 
 ```
 Next time you use Wrapper (any task), the new version will be downloaded. 
 
-You can also specify distribution type:
+You can also specify the distribution type:
 ```
 ./gradlew wrapper --gradle-version=7.6 --distribution-type=bin
 ```
 Available options are `bin` and `all`. The default value is `bin`.
 `bin` - for binary distribution containing only the runtime, `all` - binary + sources + documentation
 
-You can also upgrade by generation distribution URL and manually changing the property in `gradle-wrapper.properties` file.
+You can also upgrade by generation distribution URL and manually change the property in `gradle-wrapper.properties` file.
 ```
 distributionUrl=https\://services.gradle.org/distributions/gradle-7.6-all.zip
 ```
@@ -78,7 +80,7 @@ distributionUrl=https\://services.gradle.org/distributions/gradle-7.6-all.zip
 
 - `wrapper` task only updates `gradle-wrapper.properties` file with new version. Usually it does not cause any troubles in execution, but if you want to update `gradle-wrapper.jar`, too, run `wrapper` task for the second time.
 
-You can customise the Wrapper task in `build.gradle` file. For example, change default distribution type from `bin` to `all`:
+You can configure the Wrapper task in `build.gradle` file. For example, change default distribution type from `bin` to `all`:
 ```
 tasks.named('wrapper') {
     distributionType = Wrapper.DistributionType.ALL
