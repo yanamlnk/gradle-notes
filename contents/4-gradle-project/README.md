@@ -2,12 +2,12 @@
 
 ## Basic project using gradle init command
 
-Create directory of your project go to it.
+1. Create a directory of your project and go to it.
 ```
 mkdir gradle-tutorial
 cd gradle-tutorial 
 ```
-2. Use command `gradle init`. You will see a menu you can choose from. Each question has its default values. For this project choose 
+2. Use command `gradle init`. You will see a menu you can choose from. Each question has its default values. For this project choose: 
     - type `1: basic`
     - build script DSL `1: Groovy`
     - project name may be default (= directory name). *Just hit `Enter` to choose default*
@@ -19,7 +19,7 @@ BUILD SUCCESSFUL in 15s
 
 ## Basic structure
 
-After you used command `gradle init`, the project is created with the structure as below:
+After you used command `gradle init`, the project is created with the following structure:
 
 ```
 .
@@ -39,21 +39,20 @@ After you used command `gradle init`, the project is created with the structure 
 2. Gradle Wrapper files: 
     - `gradle-wrapper.jar` - contains code for downloading the Gradle distribution
     - `gradle-wrapper.properties` - responsible for configuring the Wrapper runtime behavior e.g. the Gradle version compatible with this version
-    - `gradlew` and `gradlew.bat` - a shell script and a Windows batch script for executing the build with the Wrapper.
+    - `gradlew` and `gradlew.bat` - a shell script and a Windows batch script for executing the build with the Wrapper
 
 Gradle Wrapper is explained in [Wrapper](https://github.com/yanamlnk/gradle-notes/tree/main/contents/6-gradle-wrapper) section. Shortly speaking, it’s a script that executes tasks using previously declared Gradle version without required manual installation.
 
 3. `settings.gradle` file specifies which projects to include in your build. Optional for single project build (mandatory for multi-project build). 
 
-Example of file content for simple Java application project:
+Example of file content for simple Java application build:
 ```
 rootProject.name = 'demo'
 include('app')
 ```
 
-`rootProject.name` - name of the build, which overrides the default behaviour of naming the build after the directory it’s in. It’s recommended to set a fixed name as the folder might change if the project is shared.
-
-`include('app')` defines that the build consists of one subproject called `app` that contains the actual code and build logic. More subprojects can be added by additional `include(...)` statements.
+- `rootProject.name` - name of the build, which overrides the default behaviour of naming the build after the directory it’s in. It’s recommended to set a fixed name as the folder might change if the project is shared.
+- `include('app')` defines that the build consists of one subproject called `app` that contains the actual code and build logic. More subprojects can be added by additional `include(...)` statements.
 
 4. `.gradle` is a hidden directory with project-specific cache used internally by Gradle.
 5. `.gitignore` file is created automatically and by default contains the following:
