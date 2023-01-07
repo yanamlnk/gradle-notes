@@ -1,5 +1,7 @@
 # 10. Multi-Project Build
 
+## Structure 
+
 - consists of one root project, and one or more subprojects
 
 Example of a multi-project build that contains subprojects called `app` and `lib`:
@@ -57,15 +59,15 @@ dependencies {
 
 ## Sharing common configurations
 
-`buildSrc` - special subproject 
+- `buildSrc` - special subproject 
 
-Best practice: use for custom tasks.
-- Build files -> configurations only 
-- Custom tasks -> buildSrc
+- best practice: use for custom tasks
+  - build files -> configurations only 
+  - custom tasks -> buildSrc
 
-- Great tool for encapsulation as long as the code does not need to be shared among multiple, independent projects.
-- Upon discovery of the directory, Gradle automatically compiles and tests this code and puts it in the classpath of your build script. 
-- For multi-project builds there can be only one `buildSrc` directory, which has to sit in the root project directory.
+- great tool for encapsulation as long as the code does not need to be shared among multiple, independent projects
+- upon discovery of the directory, Gradle automatically compiles and tests this code and puts it in the classpath of your build script
+- for multi-project builds there can be only one `buildSrc` directory, which has to sit in the root project directory
 
 A typical project including `buildSrc` has the following layout. Any code under `buildSrc` should use a package similar to application code. 
 ```
@@ -92,6 +94,7 @@ A typical project including `buildSrc` has the following layout. Any code under 
 ```
 
 Optionally, the `buildSrc` directory can host a build script if additional configuration is needed (e.g. to apply plugins or to declare dependencies). 
+
 `buildSrc` can be used as plugin, which is visible to every build script used by the build. However, it is not visible outside the build, and so you cannot reuse the plugin outside the build it is defined in.
 ```
 ├── buildSrc
@@ -125,6 +128,7 @@ dependencies {
 }
 ```
 <sub>[Check full sample here](https://docs.gradle.org/current/samples/sample_convention_plugins.html).</sub>
+
 :grey_exclamation: A change in `buildSrc` causes the whole project to become out-of-date, so don’t forget to run a full build regularly (with small changes you can use `--no-rebuild` command-line option to get faster feedback) :grey_exclamation:
 
 ### Additional reading:
