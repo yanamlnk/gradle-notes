@@ -104,7 +104,7 @@ The main focus is to grasp Gradle basics, terminology, concepts and workflow. Th
 <p>
 
   - [Command-line interface](https://github.com/yanamlnk/gradle-notes/blob/main/contents/8-work-with-gradle/README.md#command-line-interface)
-  - [Gradle & Third-party Tools](https://github.com/yanamlnk/gradle-notes/blob/main/contents/8-work-with-gradle/README.md#gradle--third-party-tools)
+  - [Gradle & Supported Third-party Tools](https://github.com/yanamlnk/gradle-notes/blob/main/contents/8-work-with-gradle/README.md#gradle--supported-third-party-tools)
 
 </p>
 </details>
@@ -113,6 +113,7 @@ The main focus is to grasp Gradle basics, terminology, concepts and workflow. Th
 <details><summary><sub>Learn where Gradle stores build output, how to generate build artifacts: jar, tar or zip files, and how to publish your library.</sub></summary>
 <p>
 
+  - [build directory](https://github.com/yanamlnk/gradle-notes/blob/main/contents/9-share-project/README.md#build-directory)
   - [Generate jar](https://github.com/yanamlnk/gradle-notes/blob/main/contents/9-share-project/README.md#generate-jar)
   - [Distribute application](https://github.com/yanamlnk/gradle-notes/blob/main/contents/9-share-project/README.md#distribute-application)
   - [Publish](https://github.com/yanamlnk/gradle-notes/blob/main/contents/9-share-project/README.md#publish)
@@ -124,6 +125,7 @@ The main focus is to grasp Gradle basics, terminology, concepts and workflow. Th
 <details><summary><sub>Learn about multi-project build structure, how to execute tasks, and how subprojects can depend on each other.</sub></summary>
 <p>
 
+  - [Structure](https://github.com/yanamlnk/gradle-notes/blob/main/contents/10-multi-project-build/README.md#structure)
   - [Declare dependencies between subprojects](https://github.com/yanamlnk/gradle-notes/blob/main/contents/10-multi-project-build/README.md#declare-dependencies-between-subprojects)
   - [Execute tasks](https://github.com/yanamlnk/gradle-notes/blob/main/contents/10-multi-project-build/README.md#execute-tasks)
   - [Sharing common configurations](https://github.com/yanamlnk/gradle-notes/blob/main/contents/10-multi-project-build/README.md#sharing-common-configurations)
