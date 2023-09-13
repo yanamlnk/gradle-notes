@@ -21,11 +21,11 @@ Maven is a project development management and comprehension tool with a lot of u
 - distribution publication, etc.
 
 ## Gradle vs Maven
-<sub>Both Gradle and Maven has its [advantages and disadvantages]((https://www.geeksforgeeks.org/difference-between-gradle-and-maven/)). However, this chapter is more focused on **functionality** differences, for example, how to create a project in Maven, or what build script Maven has.</sub>
+<sub>*Both Gradle and Maven has its [advantages and disadvantages]((https://www.geeksforgeeks.org/difference-between-gradle-and-maven/)). However, this chapter is more focused on **functionality** differences, for example, how to create a project in Maven, or what build script Maven has.*</sub>
 
 ### Short overview
 
- | **Gradle** | **Maven**
+ :elephant: / :feather: | **Gradle** | **Maven**
 :---:| --- | ---
 **Installation** | installation is necessary for project creation, but unnecessary for starting a project due to Wrapper functionality | user has to have Maven installed in order to create or start Maven project (unless this Maven project has generated Wrapper files, then user can run project without locally installed Maven)
 **Creation** | `gradle init` command starts menu where user can choose project options (like base language, test dependency, as well as name of the project, etc) | `mvn archetype:generate` starts a menu where user can choose type of archetype (= type of project, like webapp, spring project, etc) and project values (like package, version, etc). User can also skip the menu, and configure all the parameters as one command, e.g.: `mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4`
@@ -53,16 +53,18 @@ It is also possible to pass all the parameters to the command immediately, for e
 ```
 mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
 ```
-Check also: [guide to naming conventions on groupId, artifactId, and version](https://maven.apache.org/guides/mini/guide-naming-conventions.html).
+:mag_right: *Check also: [guide to naming conventions on groupId, artifactId, and version](https://maven.apache.org/guides/mini/guide-naming-conventions.html).*
 
 Default archetype is [quickstart archetype](https://maven.apache.org/archetypes/maven-archetype-quickstart/).
 
-Check also: list of [archetypes](https://maven.apache.org/archetypes/).
+:mag_right: *Check also: list of [archetypes](https://maven.apache.org/archetypes/).*
 
 You may want to standardize J2EE development within your organization, so you may want to provide your own archetypes. Once archetype is created and deployed in your organization's repository, it is available for use by all developers within your organization. [Guide to creating Archetypes](https://maven.apache.org/guides/mini/guide-creating-archetypes.html).
 
 ### IDE support
-Maven is integrated into **Apache NetBeans IDE**, **Eclipse IDE** and **JetBrains IntelliJ IDEA**. Read more about [IDE Integration](https://maven.apache.org/ide.html).
+Maven is integrated into **Apache NetBeans IDE**, **Eclipse IDE** and **JetBrains IntelliJ IDEA**.
+
+:mag_right: *Read more about [IDE Integration](https://maven.apache.org/ide.html).*
 
 ### Project structure
 After running a command for creating a project:
@@ -101,7 +103,7 @@ Maven has its conventions for default project structure (however, they can be ov
     - `target` is used to house all output of the build. For example, after you compile the sources with `mvn compile`, compiled classes will be placed into the `target/classes` directory
     - `src` contains all of the source materials (e.g. code, resources) for building the project, its site and so on
 
-Check also: [more about src standard layout](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html).
+:mag_right: *Check also: [more about src standard layout](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html).*
 
 ### Configuration
 Maven configuration occurs at 3 levels:
@@ -111,7 +113,7 @@ Maven configuration occurs at 3 levels:
 
 The **Project** defines information that applies to the project, no matter who is building it, while **Installation** and **User** define settings for the current environment.
 
-See more information [here](https://maven.apache.org/guides/mini/guide-configuring-maven.html).
+:mag_right: *See more information [here](https://maven.apache.org/guides/mini/guide-configuring-maven.html).*
 
 ### pom.xml
 
@@ -152,7 +154,8 @@ A little bit on **XML sytax**:
 ```
 
 Now back to `pom.xml`.
-A Project Object Model or POM is an XML file that contains information about the project and configuration details used by Maven to execute a task or goal.
+
+A **Project Object Model** or **POM** is an XML file that contains information about the project and configuration details used by Maven to execute a task or goal.
 
 Each project has its POM, but there is also the Super POM - Maven's default POM. All POMs extend the Super POM unless explicitly set, meaning the configuration specified in the Super POM is inherited by the POMs you created for your projects.
 
@@ -222,7 +225,7 @@ List of elements configurable in POM:
 </project>
 
 ```
-To get more details on these elements, check [this page](https://maven.apache.org/ref/3.9.4/maven-model/maven.html).
+:mag_right: *To get more details on these elements, check [this page](https://maven.apache.org/ref/3.9.4/maven-model/maven.html).*
 
 **The Basics**:
 - `packaging` - default: `jar`, other available: `pom`, `jar`, `maven-plugin`, `ejb`, `war`, `ear`, `rar`
@@ -320,9 +323,10 @@ or configure the plugin directly:
 </project>
 ```
 
-[More on basics](https://maven.apache.org/pom.html#The_Basics).
+:mag_right: *More on **The Basics** [here](https://maven.apache.org/pom.html#The_Basics).*
 
-**Build Settings**
+**Build Settings**:
+
 Those settings consists of the `build` element, that handles things like declaring your project's directory structure and managing plugins; and the `reporting` element, that largely mirrors the build element for reporting purposes.
 
 - `BaseBuild` is the base set of elements:
@@ -342,17 +346,19 @@ Those settings consists of the `build` element, that handles things like declari
 `finalName`:  the name of the bundled project when it is finally built 
 `filter`: defines *.properties files that contain a list of properties that apply to resources
 
-[More on build settings](https://maven.apache.org/pom.html#Build_Settings).
+:mag_right: *More on **Build Settings** [here](https://maven.apache.org/pom.html#Build_Settings).*
 
-**More Project Information**
+**More Project Information**:
+
 Here is where you can configure description of the project, its url, as well as licenses, developing organization and developers themselves.
 
-[More on more project information](https://maven.apache.org/pom.html#More_Project_Information).
+:mag_right: *More on **More project information** [here](https://maven.apache.org/pom.html#More_Project_Information).*
 
-**Environment Settings**
+**Environment Settings**:
+
 Settings for managing project environment, for example, continuous integration build systems, mailing lists, repositories for plugins or dependencies, etc.
 
-[More on environment settings](https://maven.apache.org/pom.html#Environment_Settings).
+:mag_right: *More on **Environment Settings** [here](https://maven.apache.org/pom.html#Environment_Settings).*
 
 ### Commands to work with the tool
 Maven is based around the concept of a **build lifecycle** - process for building and distributing a particular project.
@@ -378,13 +384,13 @@ Some of the most popular phases of **default** lifecycle (in order):
 - `install` - install the package into the local repository to use as a dependency in other projects locally
 - `deploy` - done in the build environment, copies the final package to the remote repository for sharing with other developers and projects
 
-**clean** lifecycle:
+**Clean** lifecycle:
 - `clean` - remove the `target` directory with all the build data
 
-**site** lifecycle:
+**Site** lifecycle:
 - `site` - generate a web site for your project
 
-Check also: [full list of build phases of 3 lifecycles](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html#lifecycle-reference).
+:mag_right: *Check also: [full list of build phases of 3 lifecycles](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html#lifecycle-reference).*
 
 So if you run `mvn verify`, it will execute every preceding phase before executing `verify`. And command `mvn deploy` will execute the entire **default** lifecycle.
 
@@ -394,8 +400,8 @@ Each phase is a sequence of **goals**, so each goal is responsible for a specifi
 When we run a phase, all goals are executed in order.
 Goals are part of the plugins, so to execute one goal, you need to mention a name of a plugin, too (in a format `<PLUGIN>:<GOAL>`).
 
-For example, **package** phase contains 2 goals: **jar:jar** and **war:war**.
-**compile** phase consists of **compiler:compile** goal.
+For example, **package** phase contains 2 goals: `jar:jar` and `war:war`.
+**compile** phase consists of `compiler:compile` goal.
 
 To list all the goals bound to the specific phase: `mvn help:describe -Dcmd=<PHASENAME>`
 
@@ -403,7 +409,7 @@ A goal may be bound to zero or more build phases. A goal not bound to any build 
 
 To run a specific goal without executing its entire phase (and the preceding phases), use the command: `mvn <PLUGIN>:<GOAL>`
 
-Note: the phases named with hyphenated-words (`pre-*`, `post-*`, or `process-*`) are not usually directly called from the command line, since they are producing intermediate results that are not useful outside the build.
+**Note**: the phases named with hyphenated-words (`pre-*`, `post-*`, or `process-*`) are not usually directly called from the command line, since they are producing intermediate results that are not useful outside the build.
 
 An interesting thing to note is that phases and goals may be executed in sequence.
 ```
@@ -425,7 +431,7 @@ package | jar:jar
 install | install:install
 deploy | deploy:deploy
 
-You can check default bindings for different packages [here](https://maven.apache.org/ref/3.9.4/maven-core/default-bindings.html).
+:mag_right: *You can check default bindings for different packages [here](https://maven.apache.org/ref/3.9.4/maven-core/default-bindings.html).*
 
 2. With plugins. Plugin itself is a collection of goals, so by configuring plugins, you can add goals to the build. You need to add the plugin to the POM in the `<plugins>` section of `<build>`.
 
@@ -448,7 +454,7 @@ For example, let's say you have a goal `display:time` that echos the current tim
 ```
 
 ### Plugins
-[List of available plugins](https://maven.apache.org/plugins/).
+:mag_right: *[List of available plugins](https://maven.apache.org/plugins/).*
 
 A Maven plugin is a group of goals; however, these goals aren’t necessarily all bound to the same phase.
 To list all goals in a specific plugin: `mvn <PLUGIN>:help`.
@@ -458,7 +464,7 @@ To see a description of the plugin and its parameters and types:
 mvn <PLUGIN>:help -Ddetail -Dgoal=<GOAL>
 ```
 
-There are two types of plugins, `build` and `reporting`:
+There are two types of plugins, **build** and **reporting**:
 - Build plugins are executed during the build and configured in the `<build/>` POM element.
 - Reporting plugins are executed during the site generation and configured in the `<reporting/>` element.
 
@@ -491,7 +497,7 @@ For example, to configure the Java compiler to allow JDK 5.0 sources, add `confi
 About `pluginManagement` element:
 You can add and configure plugins either in `plugins` section of the POM, or in `pluginManagement` section. The difference is that by adding the plugin in the `pluginManagement` section, it becomes available to this POM, and all inheriting child POMs. Then in child POM, you don't need to duplicate the configurations.
 
-You can read more about configuring plugins [here](https://maven.apache.org/guides/mini/guide-configuring-plugins.html).
+:mag_right: *You can read more about configuring plugins [here](https://maven.apache.org/guides/mini/guide-configuring-plugins.html).*
 
 ### Multi-project
 - A multi-module project contains an aggregator POM (the POM where all submodules listed), and the submodules (projects).
@@ -514,7 +520,7 @@ cd parent-project
 mvn archetype:generate -DgroupId=com.example -DartifactId=service
 mvn archetype:generate -DgroupId=com.example -DartifactId=webapp
 ```
-4. Done!
+4. done!
 
 Since packaging type of `parent-project` is `pom`, Maven will recognise all new created projects (`service` and `webapp`) as submodules. `pom.xml` files will be modified accordingly:
 
@@ -569,9 +575,7 @@ All the files generated by build are located in `target` directory. For example,
 
 Those files are temporary, so it is a good practice to run `mvn clean` to delete them before each build (not doing it can lead to weird compile behaviour, like being able to compile code that shouldn't be).
 
-**target repository vs local repository**
 There is a difference between temporary and final build artifacts:
-
 - `mvn package` command will generate a file to `target` directory. Name of the file can be either custom, set within the POM, or default (composed from Maven coordinates of the project). This file will contain compiled classes, you can send it to anybody, but in general it is a temporary file.
 - `mvn install` will install the package to the local repository (`~/.m2/repository/`), and you will be able to use this package as a dependency in other projects locally. This file is not temporary, and it contains generated artifacts + project's POM. Name of this file cannot be custom. For example, a project with a group id of `my.groupid`, an artifact id of `my-artifactid` and a version of `1.0` will get installed in the folder `my/groupid/my-artifactid/1.0`; in which you'll find the POM file, and all the other artifacts. The name of the artifacts themselves cannot be overridden: it will be `my-artifactid-1.0.jar` for a JAR file.
 
