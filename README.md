@@ -11,9 +11,10 @@ The main focus is to grasp Gradle basics, terminology, concepts and workflow. Th
 
 ### :grey_exclamation: Click [here](https://github.com/yanamlnk/gradle-notes/blob/main/contents/1-what-is-build-tool/README.md) to start :grey_exclamation:
 
-:wavy_dash: *or feel free to jump to any topic you are interested in, using table of contents below* :wavy_dash:
+:wavy_dash: *or feel free to jump to any topic, using **Table of Contents** below* :wavy_dash:
 
-Interested in Maven? :eyes: Check new bonus chapter: :feather:[Maven Notes](https://github.com/yanamlnk/gradle-notes/blob/main/contents/12-maven-notes/README.md):feather:!
+### Interested in Maven? :eyes: 
+Check new bonus chapter: :feather: [Maven Notes](https://github.com/yanamlnk/gradle-notes/blob/main/contents/12-maven-notes/README.md) :feather:
 
 ## Table of Contents:
 1. [What is Build Tool?](https://github.com/yanamlnk/gradle-notes/blob/main/contents/1-what-is-build-tool/README.md)
@@ -148,6 +149,7 @@ Interested in Maven? :eyes: Check new bonus chapter: :feather:[Maven Notes](http
 12. [Maven Notes](https://github.com/yanamlnk/gradle-notes/blob/main/contents/12-maven-notes/README.md)
 <details><summary><sub>Learn how to use Maven and what are the differences and similarities between Gradle and Maven functionality.</sub></summary>
 <p>
+  
   - [Install Maven](https://github.com/yanamlnk/gradle-notes/blob/main/contents/12-maven-notes/README.md#install-maven)
   - [What is Maven](https://github.com/yanamlnk/gradle-notes/blob/main/contents/12-maven-notes/README.md#what-is-maven)
   - [Gradle vs Maven](https://github.com/yanamlnk/gradle-notes/blob/main/contents/12-maven-notes/README.md#gradle-vs-maven)
@@ -166,5 +168,6 @@ Interested in Maven? :eyes: Check new bonus chapter: :feather:[Maven Notes](http
 </details>
 
 13. [Resources](https://github.com/yanamlnk/gradle-notes/blob/main/resources/README.md)
+    
 <sub>Links to the resources that were used to write these cheatsheets.</sub>
 
