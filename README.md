@@ -127,6 +127,7 @@ Check new bonus chapter: :feather: [Maven Notes](https://github.com/yanamlnk/gra
 10. [Multi-Project Build](https://github.com/yanamlnk/gradle-notes/blob/main/contents/10-multi-project-build/README.md)
 <details><summary><sub>Learn about multi-project build structure, how to execute tasks, and how subprojects can depend on each other.</sub></summary>
 <p>
+  
   - [Structure](https://github.com/yanamlnk/gradle-notes/blob/main/contents/10-multi-project-build/README.md#structure)
   - [Declare dependencies between subprojects](https://github.com/yanamlnk/gradle-notes/blob/main/contents/10-multi-project-build/README.md#declare-dependencies-between-subprojects)
   - [Execute tasks](https://github.com/yanamlnk/gradle-notes/blob/main/contents/10-multi-project-build/README.md#execute-tasks)
