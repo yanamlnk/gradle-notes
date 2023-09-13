@@ -57,6 +57,26 @@
 ### Troubleshooting Gradle
 - [Search for Help with Gradle Build Tool](https://gradle.org/help/#gsc.tab=0)
 
+### Maven Notes
+- [Maven in 5 Minutes](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)
+- [Maven Getting Started Guide](https://maven.apache.org/guides/getting-started/index.html)
+- [Maven Tutorial - Crash Course(Video)](https://www.youtube.com/watch?v=Xatr8AZLOsE&t=338s&ab_channel=MarcoCodes)
+- [Introduction to Archetypes](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html)
+- [Project creation (from an archetype)](https://maven.apache.org/archetype/maven-archetype-plugin/usage.html) 
+- [XML Syntax Rules](https://www.w3schools.com/xml/xml_syntax.asp)
+- [POM Reference](https://maven.apache.org/pom.html#POM_Reference)
+- [Introduction to the POM](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html)
+- [Properties](https://maven.apache.org/pom.html#Properties)
+- [What does properties tag mean in pom xml maven?](https://stackoverflow.com/questions/65696058/what-does-properties-tag-mean-in-pom-xml-maven)
+- [Setting the -source and -target of the Java Compiler](https://maven.apache.org/plugins/maven-compiler-plugin/examples/set-compiler-source-and-target.html)
+- [Maven Goals and Phases](https://www.baeldung.com/maven-goals-phases)
+- [Introduction to the Build Lifecycle](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html)
+- [Plugin Management in Maven](https://www.baeldung.com/maven-plugin-management)
+- [Multi-Module Project with Maven](https://www.baeldung.com/maven-multi-module)
+- [target folder vs local repository](https://stackoverflow.com/questions/40979487/target-folder-vs-local-repository)
+- [Output build of Maven](https://stackoverflow.com/questions/34895982/output-build-of-maven/34896172#34896172)
+- [Maven Wrapper](https://maven.apache.org/wrapper/)
+
 #   
 |[BACK TO TABLE OF CONTENTS](https://github.com/yanamlnk/gradle-notes#table-of-contents)|
 | --- |

@@ -20,5 +20,5 @@
 - [more about Build Scan](https://gradle.com/gradle-enterprise-solutions/build-scan-root-cause-analysis-data/)
 
 #   
-|:arrow_left: [BACK](https://github.com/yanamlnk/gradle-notes/blob/main/contents/10-multi-project-build/README.md)|[TABLE OF CONTENTS](https://github.com/yanamlnk/gradle-notes#table-of-contents)|[NEXT](https://github.com/yanamlnk/gradle-notes/blob/main/resources/README.md) :arrow_right:|
+|:arrow_left: [BACK](https://github.com/yanamlnk/gradle-notes/blob/main/contents/10-multi-project-build/README.md)|[TABLE OF CONTENTS](https://github.com/yanamlnk/gradle-notes#table-of-contents)|[NEXT](https://github.com/yanamlnk/gradle-notes/blob/main/contents/12-maven-notes/README.md) :arrow_right:|
 | --- | --- | --- |

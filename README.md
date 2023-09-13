@@ -13,6 +13,8 @@ The main focus is to grasp Gradle basics, terminology, concepts and workflow. Th
 
 :wavy_dash: *or feel free to jump to any topic you are interested in, using table of contents below* :wavy_dash:
 
+Interested in Maven? :eyes: Check new bonus chapter: :feather:[Maven Notes](https://github.com/yanamlnk/gradle-notes/blob/main/contents/12-maven-notes/README.md):feather:!
+
 ## Table of Contents:
 1. [What is Build Tool?](https://github.com/yanamlnk/gradle-notes/blob/main/contents/1-what-is-build-tool/README.md)
 <details><summary><sub>Learn how to "build" your project, what built-in options do you have, and why do you need build tools.</sub></summary>
@@ -124,7 +126,6 @@ The main focus is to grasp Gradle basics, terminology, concepts and workflow. Th
 10. [Multi-Project Build](https://github.com/yanamlnk/gradle-notes/blob/main/contents/10-multi-project-build/README.md)
 <details><summary><sub>Learn about multi-project build structure, how to execute tasks, and how subprojects can depend on each other.</sub></summary>
 <p>
-
   - [Structure](https://github.com/yanamlnk/gradle-notes/blob/main/contents/10-multi-project-build/README.md#structure)
   - [Declare dependencies between subprojects](https://github.com/yanamlnk/gradle-notes/blob/main/contents/10-multi-project-build/README.md#declare-dependencies-between-subprojects)
   - [Execute tasks](https://github.com/yanamlnk/gradle-notes/blob/main/contents/10-multi-project-build/README.md#execute-tasks)
@@ -144,6 +145,26 @@ The main focus is to grasp Gradle basics, terminology, concepts and workflow. Th
 </p>
 </details>
 
-12. [Resources](https://github.com/yanamlnk/gradle-notes/blob/main/resources/README.md)
+12. [Maven Notes](https://github.com/yanamlnk/gradle-notes/blob/main/contents/12-maven-notes/README.md)
+<details><summary><sub>Learn how to use Maven and what are the differences and similarities between Gradle and Maven functionality.</sub></summary>
+<p>
+  - [Install Maven](https://github.com/yanamlnk/gradle-notes/blob/main/contents/12-maven-notes/README.md#install-maven)
+  - [What is Maven](https://github.com/yanamlnk/gradle-notes/blob/main/contents/12-maven-notes/README.md#what-is-maven)
+  - [Gradle vs Maven](https://github.com/yanamlnk/gradle-notes/blob/main/contents/12-maven-notes/README.md#gradle-vs-maven)
+    - [Short overview](https://github.com/yanamlnk/gradle-notes/blob/main/contents/12-maven-notes/README.md#short-overview)
+    - [Maven project creation](https://github.com/yanamlnk/gradle-notes/blob/main/contents/12-maven-notes/README.md#maven-project-creation)
+    - [IDE support](https://github.com/yanamlnk/gradle-notes/blob/main/contents/12-maven-notes/README.md#ide-support)
+    - [Project structure](https://github.com/yanamlnk/gradle-notes/blob/main/contents/12-maven-notes/README.md#project-structure)
+    - [Configuration (pom.xml)](https://github.com/yanamlnk/gradle-notes/blob/main/contents/12-maven-notes/README.md#configuration)
+    - [Commands to work with the tool](https://github.com/yanamlnk/gradle-notes/blob/main/contents/12-maven-notes/README.md#commands-to-work-with-the-tool)
+    - [Plugins](https://github.com/yanamlnk/gradle-notes/blob/main/contents/12-maven-notes/README.md#plugins)
+    - [Multi-project](https://github.com/yanamlnk/gradle-notes/blob/main/contents/12-maven-notes/README.md#multi-project)
+    - [Build output files](https://github.com/yanamlnk/gradle-notes/blob/main/contents/12-maven-notes/README.md#build-output-files)
+    - [Maven Wrapper](https://github.com/yanamlnk/gradle-notes/blob/main/contents/12-maven-notes/README.md#maven-wrapper)
 
+</p>
+</details>
+
+13. [Resources](https://github.com/yanamlnk/gradle-notes/blob/main/resources/README.md)
+<sub>Links to the resources that were used to write these cheatsheets.</sub>
 
